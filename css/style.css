@@ -58,20 +58,24 @@ img{
     margin: 0 auto;
     display: block;
     height: 600px;
-    max-width: 100%;
+    width: 100%;
     border-radius: 5px;
     padding: 5px;
 }
 figure{
     margin: 0;
+    position: relative;
+    margin-bottom: 20px;
 }
 figcaption{
-    margin-left: 50px;
+    
     font-size: 16px;
     color: #565353;
     font-style: italic;
     font-weight: 300;
     margin-top: 5px;
+    position: absolute;
+    left: 20%;
 }
 .link__map{
     font-style: italic;
@@ -127,12 +131,8 @@ h3{
         margin-left: 150px;
         margin-right: 150px;
     }
-    figcaption{
-        font-size: 14px;
-        padding-left: 5px;
-        margin-left: 150px;
-    }
 }
+
 @media (max-width: 1280px){
      body{
         font-size: 16px;
@@ -160,7 +160,7 @@ h3{
     }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1100px){
     h2{
         margin-left: 70px;
     }
@@ -170,7 +170,7 @@ h3{
     }
 }
 
-@media (max-width: 930px) {
+@media (max-width: 930px){
     .headlist{
         margin-left: -30px;
         margin-right: 0px;
@@ -181,7 +181,7 @@ h3{
     }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 860px){
 
     img{
         height: 400px;
@@ -213,10 +213,7 @@ h3{
     .map__route{
         margin-top: 0px;
     }
-    figcaption{
-        font-size: 12px;
-        margin-left: 80px;
-  }
+    
 }
 @media (max-width: 790px){
     .headlist{
@@ -248,10 +245,7 @@ h3{
             height: 300px;
             width: 500px; 
         }
-        figcaption{
-            
-            margin-left: 120px;
-    }
+        
     .img__map{
         width: 600px;
         height: 300px;
@@ -268,11 +262,7 @@ h3{
             margin-right: 20px;
             margin-bottom: 0px;
         }
-        figcaption{
-            
-            margin-top: 0;
-            margin-left: 60px;
-        }
+        f
         .img__map{
             width: 400px;
             height: 250px;
