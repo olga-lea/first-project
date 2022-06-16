@@ -25,7 +25,7 @@ li{
 }
 h1{
     text-align: center;
-    font-size: 64px;
+    font-size: 58px;
     font-family: 'Prata', serif;
     font-weight: 400;
     line-height: 1.2;
@@ -39,12 +39,14 @@ h1{
     margin: 10px;
     margin-right: 50px;
     margin-left: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 h2{
     font-family: 'Prata', serif;
     font-weight: 400;
-    font-size: 36px; 
+    font-size: 32px; 
 }
 p{
     line-height: 2;
@@ -56,8 +58,9 @@ img{
     margin: 0 auto;
     display: block;
     height: 600px;
-    width: 1100px; 
+    max-width: 100%;
     border-radius: 5px;
+    padding: 5px;
 }
 figure{
     margin: 0;
@@ -119,7 +122,17 @@ h3{
     fill: #050293;
 }
 
-
+@media (max-width: 1440px){
+    .headlist{
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+    figcaption{
+        font-size: 14px;
+        padding-left: 5px;
+        margin-left: 150px;
+    }
+}
 @media (max-width: 1280px){
      body{
         font-size: 16px;
@@ -131,19 +144,12 @@ h3{
          font-size: 24px; 
          margin-left: 120px;
     }
-    img{
-        
-        height: 400px;
-        width: 800px; 
-    }
-    figcaption{
-        
-        font-size: 14px;
-        text-align: center;
+    .headlist{
+        margin-left: 30px;
+        margin-right: 100px;
     }
     .link__map{
-        font-size: 14px;
-        margin-right: 180px;   
+        font-size: 14px;   
     }
     p{
         max-width: 800px;
@@ -158,18 +164,25 @@ h3{
     h2{
         margin-left: 70px;
     }
-    .link__map{
-        margin-right: 100px;
+    .headlist{
+        margin-left: 0px;
+        margin-right: 50px;
     }
 }
 
-@media (max-width: 900px) {
-    .link__map{
-        margin-right: 100px;
+@media (max-width: 930px) {
+    .headlist{
+        margin-left: -30px;
+        margin-right: 0px;
+    }
+    img{
+        height: 500px;
+        width: 800px; 
     }
 }
 
 @media (max-width: 860px) {
+
     img{
         height: 400px;
         width: 700px; 
@@ -190,30 +203,39 @@ h3{
         margin-bottom: 40px;
     }
     h2{
+        font-size: 20px;
         margin-left: 30px;
     }
-    .link__map{
-        margin-right: 80px;
+    .headlist{
+        margin-left: 10px;
+        margin-right: 20px;
     }
     .map__route{
         margin-top: 0px;
     }
+    figcaption{
+        font-size: 12px;
+        margin-left: 80px;
+  }
 }
-@media (max-width: 720px) {
-    img{
-        height: 300px;
-        width: 600px; 
+@media (max-width: 790px){
+    .headlist{
+        margin-left: 20px;
+        margin-right: 20px;
     }
-    .img__map{
-        width: 400px;
-        height: 200px;
-    }
+
+}
+@media (max-width: 730px) {
+    
     h2{
         font-size: 18px;
         margin-left: 10px;
     }
-        .link__map{
-            margin-right: 30px;
+    .headlist{
+        margin-left: 80px;
+        margin-right: 60px;
+    }
+    .link__map{
             font-size: 12px;
         }
         ol{
@@ -222,62 +244,99 @@ h3{
         h3{
             font-size: 18px;
         }
-        figcaption{
-            font-size: 12px;
-        }
-    }
-    @media (max-width: 720px) {
         img{
             height: 300px;
             width: 500px; 
         }
+        figcaption{
+            
+            margin-left: 120px;
+    }
+    .img__map{
+        width: 600px;
+        height: 300px;
+    }
+}
+    @media (max-width: 650px) {
+
+        img{
+            height: 300px;
+            width: 500px; 
+        }
+        .headlist{
+            margin-left: 40px;
+            margin-right: 20px;
+            margin-bottom: 0px;
+        }
+        figcaption{
+            
+            margin-top: 0;
+            margin-left: 60px;
+        }
+        .img__map{
+            width: 400px;
+            height: 250px;
+        }
     }
     
-    @media (max-width: 540px){
+    @media (max-width: 580px){
         p{
             font-size: 14px;
         }
         img{
         
-            height: 200px;
+            height: 300px;
             width: 450px; 
+        }
+        
+        h1{
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        .headlist{
+            margin-left: 20px;
+            margin-right: 0px;
+        }
+        figcaption{
+            font-size: 10px;
+        }
+    }
+    @media (max-width: 500px){
+        h1{
+            font-size: 28px;
+        }
+        
+        img{
+            height: 250px;
+            width: 400px; 
+        }
+        .link__map{ 
+            display: none;
+        }
+        h2 {
+            text-align: center;
+        }
+    }
+    
+    @media (max-width: 450px){
+
+        h1{
+            font-size: 24px;
+            margin-bottom: 0px;
+        }
+        img{
+            height: 200px;
+            width: 350px; 
         }
         .img__map{
             width: 300px;
             height: 200px;
         }
-        h1{
-            font-size: 32px;
-            margin-bottom: 30px;
+        figcaption{
+            font-size: 8px;
         }
     }
-    @media (max-width: 480px){
-        .link__map{ 
-            display: none;
-        }
-        img{
-        
-            height: 200px;
-            width: 400px; 
-        }
-
-    }
-    @media (max-width: 450px){
-        h1{
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-        img{
-        
-            height: 200px;
-            width: 300px; 
-        }
-        .img__map{
-            width: 200px;
-            height: 150px;
-        }
-    }
-    @media (max-width: 360px){
+    @media (max-width: 375px){
         h1{
             font-size: 18px;
             margin-bottom: 10px;
@@ -288,16 +347,14 @@ h3{
         h3{
             font-size: 16px;
         }
-            
+
         img{
-        
             height: 200px;
-            width: 200px; 
+            width: 280px; 
         }
         .img__map{
-            width: 200px;
-            height: 150px;
+            width: 250px;
+            height: 200px;
         }
-
     }
 
